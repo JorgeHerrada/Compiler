@@ -26,12 +26,12 @@ int carPeso(string& cadena);
 
 int letraONum(string& cadena)
 {
-    if(cadena == "int" || cadena == "float" || cadena == "void")
+    if(cadena == "entero" || cadena == "decimal" || cadena == "vacio")
     {
         int tipo = tipoF(cadena);
         return tipo;
     }
-    else if(cadena == "if" || cadena == "while" || cadena == "return")
+    else if(cadena == "si" || cadena == "mientras" || cadena == "retorna" || cadena == "sino")
     {
         int tipo = reservadas(cadena);
         return tipo;
@@ -638,13 +638,13 @@ int carIgual(string& cadena)
 int reservadas(string& cadena)
 {
     cout<<cadena<<" : Reservada";
-    if(cadena == "if")
+    if(cadena == "si")
         return 19;
-    else if(cadena == "while")
+    else if(cadena == "mientras")
         return 20;
-    else if(cadena == "return")
+    else if(cadena == "retorna")
         return 21;
-    else if( cadena == "else")
+    else if( cadena == "sino")
         return 22;
     return -1;
 }
