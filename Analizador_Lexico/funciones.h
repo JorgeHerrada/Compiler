@@ -11,6 +11,7 @@ int opOr(string& cadena);
 int opAnd(string& cadena);
 int opNot(string& cadena);
 int opIgualdad(string& cadena);
+
 //Caracteres
 int carPuntoYComa(string& cadena);
 int carComa(string& cadena);
@@ -19,9 +20,9 @@ int carParentesis2(string& cadena);
 int carLlave1(string& cadena);
 int carLlave2(string& cadena);
 int carIgual(string& cadena);
+
 //Reservadas
 int reservadas(string& cadena);
-
 int carPeso(string& cadena);
 
 int letraONum(string& cadena)
