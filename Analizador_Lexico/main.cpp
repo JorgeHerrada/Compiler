@@ -4,12 +4,9 @@
 #include "funciones.h"
 using namespace std;
 
-int compararLetraNum(string& cadena);
-int compararPunto(string& cadena);
-
 int main()
 {
-    //string cadena1 = "hola 22 2.2 CADENA entero + * < >= | || && ! == ; , ( ) { } = si $";
+    //string cadena1 = "hola 22 2.2 entero + * < >= | || && ! == ; , ( ) { } = si $";
     string cadena1;
     
     while(true)
@@ -18,9 +15,7 @@ int main()
         getline(cin,cadena1);
 
         if(cadena1 == "SALIR")
-        {
             break;
-        }
 
         string cadena2 = "";
 
@@ -38,10 +33,7 @@ int main()
                 for(int j = 0; j < largo2; j++)
                 {
                     if(!isalnum(cadena2[j]))
-                    {
-                        //cout<<"dentro";
                         especial = true;
-                    }
                 }
                 if(!especial)
                     tipo = letraONum(cadena2);
